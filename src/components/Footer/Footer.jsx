@@ -1,13 +1,11 @@
-import "./footer.css"
-    
+import React from 'react'
+
 const Footer = () => {
-    return (
-        <div className = "bg-black text-white p-5">
-         <h1>Componente Footer</h1>
-         <p>Parágrafo</p>
-        </div>
-    )
-   
+  return (
+    <div className='bg-black p-10'> 
+      <h1 className='font-bold text-5xl text-white'>Footer</h1>
+    </div>
+  )
 }
 
 export default Footer
