@@ -35,6 +35,7 @@ const Cadastro = () => {
       <h1 className='font-bold text-center p-3 text-2xl'>Cadastro</h1>
       <form onSubmit={handleCadastro} className='flex flex-col gap-4 p-4 mx-auto w-full sm:w-[50%] md:w-[40%] lg:w-[30%]'>
         <input
+            name='firstname'
             onChange={(e) => {setFirstname(e.target.value)}} 
             type="text" 
             placeholder='Nome'
@@ -43,6 +44,7 @@ const Cadastro = () => {
             className='border p-2 rounded'
         />
         <input
+            name='surname'
             onChange={(e) => {setSurname(e.target.value)}} 
             type="text" 
             placeholder='Último sobrenome'
@@ -51,6 +53,7 @@ const Cadastro = () => {
             className='border p-2 rounded'
         />
         <input
+            name='email'
             onChange={(e) => {setEmail(e.target.value)}} 
             type="email" 
             placeholder='Email'
@@ -59,6 +62,7 @@ const Cadastro = () => {
             className='border p-2 rounded'
         />
         <input
+            name='senha'
             onChange={(e) => {setPassword(e.target.value)}} 
             type="password" 
             placeholder='Senha'

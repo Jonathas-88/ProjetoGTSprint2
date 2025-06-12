@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaCartShopping } from 'react-icons/fa6'
 import { FaBars } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+
 
 const Header = () => {
   return (
@@ -9,10 +11,15 @@ const Header = () => {
     <nav>
         <ul className='flex gap-2'>
             <li>
-              <FaCartShopping/>
+              <Link to="/carrinho">
+                <FaCartShopping/>
+              </Link>
             </li>
             <li>
               <FaBars/>
+            </li>
+            <li>
+              <Link to={"/cadastro"}>Cadastro</Link>
             </li>
         </ul>
     </nav>
